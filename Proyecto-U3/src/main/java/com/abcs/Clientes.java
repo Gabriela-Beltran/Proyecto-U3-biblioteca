@@ -154,7 +154,7 @@ public class Clientes extends javax.swing.JInternalFrame {
             }
         });
 
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imgs/key-person.png"))); // NOI18N
+        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/key-person.png"))); // NOI18N
         jLabel1.setText("Buscar:");
 
         jComboBox1.setNextFocusableComponent(txt_id);
@@ -190,7 +190,7 @@ public class Clientes extends javax.swing.JInternalFrame {
             .addGap(0, 28, Short.MAX_VALUE)
         );
 
-        actualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imgs/actualizar.png"))); // NOI18N
+        actualizar.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/actualizar.png"))); // NOI18N
         actualizar.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 actualizarActionPerformed(evt);

@@ -278,7 +278,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel1">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/com/imgs/key-person.png"/>
+                      <Image iconType="3" name="/images/key-person.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Buscar:"/>
                   </Properties>
@@ -327,7 +327,7 @@
                 <Component class="javax.swing.JButton" name="actualizar">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/com/imgs/actualizar.png"/>
+                      <Image iconType="3" name="/images/actualizar.png"/>
                     </Property>
                   </Properties>
                   <Events>
