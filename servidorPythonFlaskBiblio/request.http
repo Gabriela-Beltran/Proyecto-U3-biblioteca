@@ -1,0 +1,88 @@
+get http://localhost:5000/generos
+
+POST http://localhost:5000/insertar_autor HTTP/1.1
+content-type: application/json
+
+{
+    "id_autor": 100,
+    "nombre": "b123"
+}
+
+POST http://localhost:5000/insertar_cliente HTTP/1.1
+content-type: application/json
+
+{
+    "nombre": "osman",
+    "direccion": "mi calle mi direccion mi codigo postal",
+    "email":"osman@hotmail.com", 
+    "telefono":"6681645680"
+}
+PUT http://localhost:5000/modificar_autor HTTP/1.1
+content-type: application/json
+
+{
+    "id_autor": 100,
+    "nombre": "mouse123123"
+}
+
+
+# /obtener_cliente/<id_cliente>
+
+get http://localhost:5000/obtener_cliente/10
+get http://localhost:5000/obtener_clientes
+# modificar datos del cliente 
+PUT http://localhost:5000/insertar_cliente HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_cliente": 10,
+    "nombre": "osman2",
+    "direccion": "mi calle2 mi direccion2 mi codigo postal2",
+    "email": "tntosman@hotmail.com",
+    "telefono": "6681645680"
+}
+
+
+
+fecha_registro = datetime.datetime.now().strftime("%Y-%m-%d")
+
+POST http://localhost:5000/insertar_proveedor HTTP/1.1
+content-type: application/json
+
+{
+    "razonsocial": "proveedor1",
+    "direccion": "mi calle mi direccion mi codigo postal",
+    "fecha_registro":"2020-12-12",
+    "email":"proveedor1@hotmail.com",
+    "telefono":"6681645680"
+}
+
+
+POST http://localhost:5000/insertar_tarjeta HTTP/1.1
+content-type: application/json
+
+{
+    "id_cliente" : "10",
+    "fecha_registro" : "2020-12-12"  ,
+    "fecha_vencimiento" :  "2022-12-12",
+    "codigo_barras" : "123456789"
+}
+
+get http://localhost:5000/obtener_proveedor/1
+
+
+# modificar datos del proveedor
+PUT http://localhost:5000/modificar_proveedor HTTP/1.1
+Content-Type: application/json
+
+{
+    "id_proveedor": 1,
+    "razonsocial": "proveedor2",
+    "direccion": "mi calle2 mi direccion2 mi codigo postal2",
+    "email": "proveedor2@outlook.com",
+    "telefono": "6681645680"
+}
+
+
+
+
