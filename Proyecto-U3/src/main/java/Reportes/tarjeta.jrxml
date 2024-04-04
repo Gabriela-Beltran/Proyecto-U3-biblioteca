@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.20.3.final using JasperReports Library version 6.20.3-415f9428cffdb6805c6f85bbb29ebaf18813a2ab  -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="tarjeta" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="0" uuid="e115bc59-fd0f-446b-a585-04725e27d7f0">
+	<style name="Title" fontName="Arial" fontSize="26" isBold="true"/>
+	<style name="SubTitle" forecolor="#666666" fontName="Arial" fontSize="18"/>
+	<style name="Column header" forecolor="#FFFFFF" fontName="Arial" fontSize="12" isBold="true"/>
+	<style name="Detail" fontName="Arial" fontSize="12"/>
+	<queryString>
+		<![CDATA[]]>
+	</queryString>
+	<field name="CLIENTE" class="java.lang.String"/>
+	<field name="ID" class="java.lang.String"/>
+	<background>
+		<band height="41" splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="156" splitType="Stretch">
+			<staticText>
+				<reportElement style="Title" x="0" y="0" width="802" height="67" uuid="1dcadd54-7d50-4470-85ed-189e4d910b25"/>
+				<textElement textAlignment="Right" verticalAlignment="Middle">
+					<font size="54" isBold="false"/>
+				</textElement>
+				<text><![CDATA[TARJETA DE CLIENTE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement style="SubTitle" x="232" y="67" width="568" height="37" uuid="862cb50c-5a5e-4906-a495-226e25115fb6"/>
+				<textElement textAlignment="Right">
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[Biblio]]></text>
+			</staticText>
+			<image>
+				<reportElement x="0" y="-1" width="170" height="151" uuid="1cd84362-6089-43ed-a9ef-6339bf1c4bdc"/>
+				<imageExpression><![CDATA["src/com/imgs/logo_con_fondo-removebg-preview.png"]]></imageExpression>
+			</image>
+			<frame>
+				<reportElement mode="Opaque" x="190" y="110" width="612" height="20" backcolor="#666666" uuid="35d90a9b-bb7e-4ec4-bfa2-68be1967d6b2"/>
+			</frame>
+			<textField pattern="EEEEE dd MMMMM yyyy">
+				<reportElement style="Column header" x="671" y="136" width="131" height="20" forecolor="#000000" uuid="95484ca0-40b4-4752-95d8-1afbc33c820b"/>
+				<textElement textAlignment="Right">
+					<font size="12" isBold="false"/>
+				</textElement>
+				<textFieldExpression><![CDATA[new java.util.Date()]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="296" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="8" width="160" height="32" uuid="5c415d1b-f3f2-4f3e-82dc-55a7a389c322"/>
+				<textElement>
+					<font fontName="Britannic Bold" size="22"/>
+				</textElement>
+				<text><![CDATA[ID]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="0" y="82" width="250" height="27" uuid="060fff0b-e54c-47d0-b87a-a445da4180c9"/>
+				<textElement>
+					<font fontName="Britannic Bold" size="22"/>
+				</textElement>
+				<text><![CDATA[CLIENTE]]></text>
+			</staticText>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="40" width="160" height="30" uuid="e563ce46-2757-44bb-bde9-a4768fbff95b">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="7c36ae01-04c3-49ec-a8bb-cfc2ab271848"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bodoni MT" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{ID}]]></textFieldExpression>
+			</textField>
+			<textField textAdjust="StretchHeight">
+				<reportElement x="0" y="109" width="250" height="25" uuid="c85e8565-c29e-40d9-83a4-d0d0b1b9adf3">
+					<property name="com.jaspersoft.studio.spreadsheet.connectionID" value="b5d5dfb9-6811-4e2d-954d-6023c213d5a0"/>
+				</reportElement>
+				<textElement verticalAlignment="Middle">
+					<font fontName="Bodoni MT" size="12"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{CLIENTE}]]></textFieldExpression>
+			</textField>
+			<componentElement>
+				<reportElement style="Column header" x="220" y="240" width="360" height="56" isRemoveLineWhenBlank="true" isPrintWhenDetailOverflows="true" uuid="59ae7e9c-bd76-4d7a-84e2-4a305ff937a5"/>
+				<jr:Code39 xmlns:jr="http://jasperreports.sourceforge.net/jasperreports/components" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports/components http://jasperreports.sourceforge.net/xsd/components.xsd">
+					<jr:codeExpression><![CDATA[$F{ID}]]></jr:codeExpression>
+				</jr:Code39>
+			</componentElement>
+			<staticText>
+				<reportElement style="SubTitle" x="580" y="230" width="250" height="27" uuid="064a991b-bc09-44f6-ac01-d305eafaa4eb"/>
+				<textElement>
+					<font fontName="Britannic Bold" size="18"/>
+				</textElement>
+				<text><![CDATA[Fecha de Vencimiento:]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="38" splitType="Stretch"/>
+	</detail>
+	<columnFooter>
+		<band splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="56" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band splitType="Stretch"/>
+	</summary>
+</jasperReport>
