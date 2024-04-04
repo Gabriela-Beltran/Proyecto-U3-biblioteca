@@ -6,10 +6,7 @@ package com.login;
 import com.funciones.Api;
 import java.awt.*;
 
-/**
- *
- * @author Elias
- */
+
 public class Login extends javax.swing.JFrame {
     
     public int xMouse=0; 
