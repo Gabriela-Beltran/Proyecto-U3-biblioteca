@@ -55,6 +55,12 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Roboto Black" size="24" style="1"/>
             </Property>
+<<<<<<< HEAD
+=======
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/Free_Sample_By_Wix.jpg"/>
+            </Property>
+>>>>>>> 9e38872f9e081a6d5e4c15e62f5961aac21f7ea7
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -298,6 +304,14 @@
           </Layout>
         </Container>
         <Component class="javax.swing.JLabel" name="jLabel8">
+<<<<<<< HEAD
+=======
+          <Properties>
+            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
+              <Image iconType="3" name="/images/books-1204029_960_720.jpg"/>
+            </Property>
+          </Properties>
+>>>>>>> 9e38872f9e081a6d5e4c15e62f5961aac21f7ea7
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
               <AbsoluteConstraints x="440" y="0" width="570" height="610"/>

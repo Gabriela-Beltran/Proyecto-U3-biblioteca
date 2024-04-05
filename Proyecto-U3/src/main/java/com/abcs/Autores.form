@@ -68,7 +68,7 @@
                       <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
                       <EmptySpace type="separate" max="-2" attributes="0"/>
                       <Component id="jButton1" min="-2" max="-2" attributes="0"/>
-                      <EmptySpace min="0" pref="77" max="32767" attributes="0"/>
+                      <EmptySpace min="0" pref="76" max="32767" attributes="0"/>
                   </Group>
                   <Group type="102" alignment="1" attributes="0">
                       <EmptySpace pref="107" max="32767" attributes="0"/>
@@ -177,7 +177,7 @@
                 <Component class="javax.swing.JLabel" name="jLabel2">
                   <Properties>
                     <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                      <Image iconType="3" name="/com/imgs/key-person.png"/>
+                      <Image iconType="3" name="/images/key-person.png"/>
                     </Property>
                     <Property name="text" type="java.lang.String" value="Buscar:"/>
                   </Properties>
@@ -205,7 +205,7 @@
             <Component class="javax.swing.JButton" name="jButton1">
               <Properties>
                 <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/com/imgs/actualizar.png"/>
+                  <Image iconType="3" name="/images/actualizar.png"/>
                 </Property>
               </Properties>
               <Events>

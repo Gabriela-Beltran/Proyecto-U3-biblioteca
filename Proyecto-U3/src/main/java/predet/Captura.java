@@ -137,7 +137,7 @@ public class Captura extends javax.swing.JFrame {
         ));
         jScrollPane1.setViewportView(jTable1);
 
-        Add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/com/imgs/editar.png"))); // NOI18N
+        Add.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/editar.png"))); // NOI18N
 
         javax.swing.GroupLayout GridDetalleLayout = new javax.swing.GroupLayout(GridDetalle);
         GridDetalle.setLayout(GridDetalleLayout);
