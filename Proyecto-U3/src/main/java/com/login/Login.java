@@ -6,10 +6,7 @@ package com.login;
 import com.funciones.Api;
 import java.awt.*;
 
-/**
- *
- * @author Elias
- */
+
 public class Login extends javax.swing.JFrame {
     
     public int xMouse=0; 
@@ -56,7 +53,9 @@ public class Login extends javax.swing.JFrame {
 
         jLabel2.setBackground(new java.awt.Color(255, 255, 255));
         jLabel2.setFont(new java.awt.Font("Roboto Black", 1, 24)); // NOI18N
-        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Free_Sample_By_Wix.jpg"))); // NOI18N
+
+        jLabel2.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/Free_Sample_By_Wix.jpg"))); // NOI18
+
         background.add(jLabel2, new org.netbeans.lib.awtextra.AbsoluteConstraints(630, 210, -1, -1));
 
         user_Entry.setFont(new java.awt.Font("Roboto Light", 0, 14)); // NOI18N
@@ -222,7 +221,9 @@ public class Login extends javax.swing.JFrame {
 
         background.add(Barra, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 960, 40));
 
+
         jLabel8.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/books-1204029_960_720.jpg"))); // NOI18N
+
         background.add(jLabel8, new org.netbeans.lib.awtextra.AbsoluteConstraints(440, 0, 570, 610));
 
         jLabel6.setBackground(new java.awt.Color(255, 255, 255));

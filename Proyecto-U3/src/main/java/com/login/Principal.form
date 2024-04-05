@@ -25,9 +25,6 @@
       <SubComponents>
         <Menu class="javax.swing.JMenu" name="Abcs">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/altas-icon.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Archivos"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -98,9 +95,6 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="Capturas">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/capturas-icon.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="  Capturas"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -144,9 +138,6 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="Consultas">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/reportes-icon.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="Reportes"/>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
@@ -165,9 +156,6 @@
                 <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
                   <Font name="Roboto" size="18" style="0"/>
                 </Property>
-                <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-                  <Image iconType="3" name="/editar.png"/>
-                </Property>
                 <Property name="text" type="java.lang.String" value="Consultas"/>
               </Properties>
               <Events>
@@ -178,9 +166,6 @@
         </Menu>
         <Menu class="javax.swing.JMenu" name="Salir">
           <Properties>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/salida.png"/>
-            </Property>
             <Property name="text" type="java.lang.String" value="&lt;-SALIR"/>
             <Property name="cursor" type="java.awt.Cursor" editor="org.netbeans.modules.form.editors2.CursorEditor">
               <Color id="Default Cursor"/>
@@ -293,9 +278,6 @@
         <Component class="javax.swing.JLabel" name="jLabel10">
           <Properties>
             <Property name="horizontalAlignment" type="int" value="0"/>
-            <Property name="icon" type="javax.swing.Icon" editor="org.netbeans.modules.form.editors2.IconEditor">
-              <Image iconType="3" name="/logo_con_fondo-removebg-preview.png"/>
-            </Property>
             <Property name="toolTipText" type="java.lang.String" value=""/>
             <Property name="horizontalTextPosition" type="int" value="0"/>
           </Properties>
