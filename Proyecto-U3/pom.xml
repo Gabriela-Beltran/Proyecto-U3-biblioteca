@@ -88,17 +88,15 @@
             <!-- ola este es el pitest -->
             <plugin>
                 <groupId>org.pitest</groupId>
-                <artifactId>pitest-maven</artifactId>
-                <version>1.10.5</version>
-
+                    <artifactId>pitest-maven</artifactId>
+                    <version>1.4.9</version>
                 <dependencies>
                     <dependency>
                         <groupId>org.pitest</groupId>
-                            <artifactId>pitest-junit5-plugin</artifactId>
-                            <version>1.2.1</version>
-                    </dependency> 
-
-                </dependencies> 
+                        <artifactId>pitest-junit5-plugin</artifactId>
+                        <version>1.2.1</version>
+                    </dependency>
+                </dependencies>
                 <executions>
                     <execution>
                         <id>mutationCoverage</id>
@@ -112,16 +110,13 @@
                     <outputFormats>
                         <outputformat>HTML</outputformat>
                         <outputformat>XML</outputformat>
-                     </outputFormats>
-                        <timestampedreports>false</timestampedreports>
-
-
+                    </outputFormats>
+                    <reportsDirectory>${project.build.directory}/pit-reports</reportsDirectory>
                     <targetClasses>
                         <param>pruebas.</param>
-                         <param>dominio.</param>
-                          <param>dao.*</param>
+                        <param>dominio.</param>
+                        <param>dao.*</param>
                     </targetClasses>
-
                     <mutators>
                         <mutator>REMOVE_CONDITIONALS</mutator>
                         <mutator>TRUE_RETURNS</mutator>
@@ -130,10 +125,10 @@
                         <mutator>FALSE_RETURNS</mutator>
                         <mutator>NULL_RETURNS</mutator>
                     </mutators>
-
                 </configuration>
+                </plugin>
 
-            </plugin>
+
             <!-- adio pitest -->
         </plugins>
     </build>
