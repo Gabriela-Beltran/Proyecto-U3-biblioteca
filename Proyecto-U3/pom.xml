@@ -52,6 +52,54 @@
                     </execution>
                 </executions>
             </plugin>
+            <!-- ola este es el pitest -->
+            <plugin>
+                <groupId>org.pitest</groupId>
+                <artifactId>pitest-maven</artifactId>
+                <version>1.15.8</version>
+
+                <dependencies>
+                    <dependency>
+                        <groupId>org.pitest</groupId>
+                            <artifactId>pitest-maven</artifactId>
+                                <version>1.15.8</version>
+                    </dependency>
+                </dependencies>
+                <executions>
+                    <execution>
+                        <id>mutationCoverage</id>
+                        <goals>
+                            <goal>mutationCoverage</goal>
+                        </goals>
+                        <phase>test</phase>
+                    </execution>
+                </executions>
+                <configuration>
+                    <outputFormats>
+                        <outputformat>HTML</outputformat>
+                        <outputformat>XML</outputformat>
+                        <timestampedreports>false</timestampedreports>
+                    </outputFormats>
+                    <reportsDirectory>${project.build.directory}/pit-reports</reportsDirectory>
+                    <targetClasses>
+                        <param>com.login.Login.</param>
+                        <param>com.login.Principal.</param>
+                        <param>com.login.biblio_funciones.*</param>
+                    </targetClasses>
+
+                    <mutators>
+                        <mutator>REMOVE_CONDITIONALS</mutator>
+                        <mutator>AOR</mutator>
+                        <mutator>AOD</mutator>
+                        <mutator>TRUE_RETURNS</mutator>
+                    </mutators>
+
+                </configuration>
+
+            </plugin>
+            <!-- adio pitest -->
+            
+            
         </plugins>
     </build>
 </project>
