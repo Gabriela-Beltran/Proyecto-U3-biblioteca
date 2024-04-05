@@ -14,12 +14,6 @@ import static java.lang.System.exit;
 import javax.swing.JFrame;
 import javax.swing.JInternalFrame;
 
-//importar jasper report
-
-
-/**
- * @author Elias
- */
 public class Principal extends javax.swing.JFrame {
 
     /**
