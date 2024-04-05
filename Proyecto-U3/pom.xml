@@ -21,9 +21,9 @@
             <artifactId>itextpdf</artifactId>
             <version>5.5.13.3</version>
         </dependency>
-<<<<<<< HEAD
+
         
-               <dependency>
+        <dependency>
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
@@ -33,26 +33,27 @@
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <version>2.25.1</version>
-=======
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>5.6.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-params</artifactId>
-            <version>5.6.0</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>5.6.0</version>
->>>>>>> c70bf44bedfebbd55285a780599e1b4e3038df0f
-            <scope>test</scope>
-        </dependency>
+            </dependency>
+
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-api</artifactId>
+                <version>5.10.2</version>
+                  <type>jar</type>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-params</artifactId>
+                <version>5.6.0</version>
+                <scope>test</scope>
+            </dependency>
+            <dependency>
+                <groupId>org.junit.jupiter</groupId>
+                <artifactId>junit-jupiter-engine</artifactId>
+                <version>5.6.0</version>
+
+                <scope>test</scope>
+            </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -84,11 +85,11 @@
                     </execution>
                 </executions>
             </plugin>
-           <!-- ola este es el pitest -->
+            <!-- ola este es el pitest -->
             <plugin>
                 <groupId>org.pitest</groupId>
                 <artifactId>pitest-maven</artifactId>
-                <version>1.4.9</version>
+                <version>1.10.5</version>
 
                 <dependencies>
                     <dependency>
@@ -111,8 +112,9 @@
                     <outputFormats>
                         <outputformat>HTML</outputformat>
                         <outputformat>XML</outputformat>
+                     </outputFormats>
                         <timestampedreports>false</timestampedreports>
-                    </outputFormats>
+
 
                     <targetClasses>
                         <param>pruebas.</param>
@@ -132,10 +134,7 @@
                 </configuration>
 
             </plugin>
-
             <!-- adio pitest -->
-            
-            
         </plugins>
     </build>
 </project>
