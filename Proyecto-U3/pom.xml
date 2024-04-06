@@ -21,39 +21,18 @@
             <artifactId>itextpdf</artifactId>
             <version>5.5.13.3</version>
         </dependency>
-
-        
+        <!-- https://mvnrepository.com/artifact/org.junit.jupiter/junit-jupiter-api -->
         <dependency>
-            <groupId>junit</groupId>
-            <artifactId>junit</artifactId>
-            <version>4.12</version>
+            <groupId>org.junit.jupiter</groupId>
+            <artifactId>junit-jupiter-api</artifactId>
+            <version>5.10.2</version>
             <scope>test</scope>
         </dependency>
         <dependency>
             <groupId>org.mockito</groupId>
             <artifactId>mockito-core</artifactId>
             <version>2.25.1</version>
-            </dependency>
-
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-api</artifactId>
-                <version>5.10.2</version>
-                  <type>jar</type>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-params</artifactId>
-                <version>5.6.0</version>
-                <scope>test</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.junit.jupiter</groupId>
-                <artifactId>junit-jupiter-engine</artifactId>
-                <version>5.6.0</version>
-
-                <scope>test</scope>
-            </dependency>
+        </dependency>
     </dependencies>
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -64,28 +43,36 @@
     <build>
         <plugins>
             <plugin>
-                <groupId>org.apache.maven.plugins</groupId> 
-                <artifactId>maven-surefire-plugin</artifactId> 
-                <version>2.22.0</version> 
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>2.22.0</version>
+                <configuration>
+                    <systemPropertyVariables>
+                        <jacoco-agent.destfile>target/jacoco.exec</jacoco-agent.destfile>
+                    </systemPropertyVariables>
+                </configuration>
             </plugin>
-            <plugin> 
-                <groupId>org.jacoco</groupId> 
-                <artifactId>jacoco-maven-plugin</artifactId> 
-                <version>0.8.11</version> 
+            <plugin>
+                <groupId>org.jacoco</groupId>
+                <artifactId>jacoco-maven-plugin</artifactId>
+                <version>0.8.11</version>
                 <executions>
                     <execution>
-                        <id>jacoco-report</id>
-                        <phase>test</phase>
+                        <id>default-prepare-agent</id>
+                        <goals>
+                            <goal>prepare-agent</goal>
+                        </goals>
+                    </execution>
+                    <execution>
+                        <id>default-report</id>
                         <goals>
                             <goal>report</goal>
                         </goals>
-                        <configuration>
-                            <outputDirectory>target/jacoco-report</outputDirectory>
-                        </configuration>
                     </execution>
                 </executions>
             </plugin>
             <!-- ola este es el pitest -->
+            <!--
             <plugin>
                 <groupId>org.pitest</groupId>
                     <artifactId>pitest-maven</artifactId>
@@ -126,9 +113,8 @@
                         <mutator>NULL_RETURNS</mutator>
                     </mutators>
                 </configuration>
-                </plugin>
-
-
+            </plugin>
+            -->
             <!-- adio pitest -->
         </plugins>
     </build>
