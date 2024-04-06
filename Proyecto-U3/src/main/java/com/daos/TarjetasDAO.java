@@ -22,7 +22,7 @@ public class TarjetasDAO {
     public Tarjeta obten(Tarjeta tarjeta) {
         for (Tarjeta tarjeta2 : tarjetas) {
             if(tarjeta2.equals(tarjeta)) {
-                return tarjeta;
+                return tarjeta2;
             }
         }
         

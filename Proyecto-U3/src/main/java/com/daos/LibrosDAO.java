@@ -18,7 +18,7 @@ public class LibrosDAO {
     public Libro obten(Libro libro) {
         for (Libro libro2 : libros) {
             if(libro2.equals(libro)) {
-                return libro;
+                return libro2;
             }
         }
         

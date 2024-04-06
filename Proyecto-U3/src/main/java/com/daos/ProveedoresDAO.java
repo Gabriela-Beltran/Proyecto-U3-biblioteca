@@ -18,7 +18,7 @@ public class ProveedoresDAO {
     public Proveedor obten(Proveedor proveedor) {
         for (Proveedor proveedor2 : proveedores) {
             if(proveedor2.equals(proveedor)) {
-                return proveedor;
+                return proveedor2;
             }
         }
         

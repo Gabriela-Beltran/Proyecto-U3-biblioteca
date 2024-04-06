@@ -18,7 +18,7 @@ public class AutoresDAO {
     public Autor obten(Autor autor2) {
         for (Autor autor : autores) {
             if(autor.equals(autor2)) {
-                return autor;
+                return autor2;
             }
         }
         

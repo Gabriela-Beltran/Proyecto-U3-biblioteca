@@ -18,7 +18,7 @@ public class ClientesDAO {
     public Cliente obten(Cliente cliente) {
         for (Cliente cliente2 : clientes) {
             if(cliente2.equals(cliente)) {
-                return cliente;
+                return cliente2;
             }
         }
         
