@@ -70,6 +70,14 @@
                         </goals>
                     </execution>
                 </executions>
+                <configuration>
+                    <includes>
+                        <include>com/**</include>
+                    </includes>
+                    <excludes>
+                        <exclude>pruebas</exclude>
+                    </excludes>
+                </configuration>
             </plugin>
             <!-- ola este es el pitest -->
             <!--

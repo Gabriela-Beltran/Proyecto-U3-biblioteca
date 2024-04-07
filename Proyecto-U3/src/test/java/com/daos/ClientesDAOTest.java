@@ -19,6 +19,7 @@ public class ClientesDAOTest {
         assertTrue(instance.anadir(new Cliente(1, "Rigoberto", "Mulberry St. 174", "rigo@gmail.com", "(664) 458 4715", new Date())));
     }
     
+    @Test
     public void testModificar() {
         ClientesDAO instance = new ClientesDAO();
         instance.anadir(new Cliente(1, "Rigoberto", "Mulberry St. 174", "rigo@gmail.com", "(664) 458 4715", new Date()));
