@@ -5,10 +5,6 @@ import com.dominio.Libro;
 import static org.junit.jupiter.api.Assertions.assertTrue;
 import org.junit.jupiter.api.Test;
 
-/**
- *
- * @author Samuel Vega
- */
 public class LibrosDAOTest {
     
     public LibrosDAOTest() {}

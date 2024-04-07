@@ -1,11 +1,5 @@
 package com.dominio;
 
-import java.util.Objects;
-
-/**
- *
- * @author Samuel Vega
- */
 public class Libro {
     private int id;
     private String titulo;
@@ -112,7 +106,23 @@ public class Libro {
     public void setAutor(Autor autor) {
         this.autor = autor;
     }
+    
+    
+    
+    
+    
+  private Integer rating; 
+  public Integer getRating() {
+    return rating;
+}
 
+
+    public void setRating(Integer rating) {
+        this.rating = rating;
+    }
+    
+    
+    
     @Override
     public int hashCode() {
         int hash = 7;

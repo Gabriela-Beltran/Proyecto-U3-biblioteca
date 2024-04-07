@@ -2,11 +2,11 @@
 package com.ServicioMock;
 
 
-public class EvaluationResult {
+public class ResultadoDeEvaluacion {
     private int rating;
     private String review;
 
-    public EvaluationResult(int rating, String review) {
+    public ResultadoDeEvaluacion(int rating, String review) {
         this.rating = rating;
         this.review = review;
     }
