@@ -41,8 +41,8 @@ public class GestorDeIntegracionTest {
         when(mockServicioExterno.evaluateBook(anyString())).thenReturn(new ResultadoDeEvaluacion(4, "Buena reseña"));
         Libro libro = new Libro();
         when(mockLibrosDAO.obtenerPorTitulo(anyString())).thenReturn(libro);
-        gestorIntegracion.processBook("Título del libro");
-        verify(mockServicioExterno).evaluateBook("Título del libro");
+        gestorIntegracion.processBook("libro");
+        verify(mockServicioExterno).evaluateBook("libro");
         assertEquals("Buena reseña", libro.getDescripcion());
     }
 
