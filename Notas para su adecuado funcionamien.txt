@@ -1,0 +1,13 @@
+Notas para su adecuado funcionamiento: 
+Este proyecto se creo con la arquitectura de servidor/cliente 
+por lo que es necesario contar con un servidor instalado (wamp/xampp)
+La base de datos se debe exportar en phpMyAdmin y se deben cambiar las credenciaales en el servidor DB.py
+
+El servidor se desarrollo con pycharm por lo que en caso de no contar con los paquetes instalados se debe instalar lo sig: 
+pip install flask
+pip install --upgrade mysql-connector-python
+
+
+Primero corra el servidor y despues el cliente , es necesario que configure su puerto por donde escucha normalmente el servidor (wampp/xampp) ya que flask usa el puerto 5000 
+
+link: https://github.com/GabsBeltran/Proyecto-U3-biblioteca.git 
