@@ -250,7 +250,24 @@ def obtener_libro(id_libro,methods=['GET']):
         return libro
 
 
+@app.route('/buscar_libro', methods=['GET'])
+def buscar_libro():
+    criterio = request.args.get('criterio')
+    dato = request.args.get('dato')
 
+    if criterio == "titulo":
+        res = DB.hacer_consulta("SELECT * FROM LIBROS WHERE titulo LIKE '%{}%'".format(dato))
+    elif criterio == "autor":
+        res = DB.hacer_consulta("SELECT * FROM LIBROS WHERE id_autor IN (SELECT ID_AUTOR FROM AUTORES WHERE nombre_completo LIKE '%{}%')".format(dato))
+    elif criterio == "id":
+        res = DB.hacer_consulta("SELECT * FROM LIBROS WHERE ID_LIBRO = '{}'".format(int(dato)))
+    else:
+        return "Criterio de búsqueda no válido"
+
+    libros = ""
+    for libro in res:
+        libros += str(libro[0]) + "--" + libro[1] + "--" + str(libro[2]) + "--" + libro[3] + "--" + libro[4] + "--" + libro[5] + "--" + libro[6] + "--" + str(libro[7]) + "--" + str(libro[8]) + "--" + str(libro[9]) + "--" + str(libro[10]) + "--" + str(libro[11]) + "--" + str(libro[12]) + "|"
+    return libros
 
 
 @app.route('/modificar_libro',methods=['PUT'])
