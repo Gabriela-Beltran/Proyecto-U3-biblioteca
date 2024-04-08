@@ -65,7 +65,10 @@ def obtener_autores():
 
     return autores
 
-
+@app.route('/eliminar_autor/<id_autor>', methods=['DELETE'])
+def eliminar_autor(id_autor):
+    DB.hacer_consulta("DELETE FROM AUTORES WHERE ID_AUTOR = '{}'".format(int(id_autor)))
+    return "Autor eliminado"
 
 # ================================> FIN AUTORES <================================
 # ================================> INICIO CLIENTES <================================
@@ -140,7 +143,11 @@ def obtener_clientes():
 
     return clientes
 
-
+# eliminar cliente
+@app.route('/eliminar_cliente/<id_cliente>', methods=['DELETE'])
+def eliminar_cliente(id_cliente):
+    DB.hacer_consulta("DELETE FROM CLIENTES WHERE ID_CLIENTE = '{}'".format(int(id_cliente)))
+    return "Cliente eliminado"
 # ================================> FIN CLIENTES <================================
 
 # ================================> INICIO PROVEEDORES  <================================
@@ -276,7 +283,10 @@ def obtener_libros():
         
         libros += str(libro[0]) + "--" + libro[1] + "--" + str(libro[2]) + "--" + libro[3] + "--" + libro[4] + "--" + libro[5] + "--" + libro[6] + "--" + str(libro[7]) + "--" + str(libro[8]) + "--" + str(libro[9]) + "--" + str(libro[10]) + "--" + str(libro[11]) + "--" + str(libro[12]) + "|"
     return libros
-
+@app.route('/eliminar_libro/<id_libro>', methods=['DELETE'])
+def eliminar_libro(id_libro):
+    DB.hacer_insert("DELETE FROM LIBROS WHERE ID_LIBRO = '{}'".format(int(id_libro)))
+    return "Libro eliminado"
 
 # ================================> FIN libros <================================
 

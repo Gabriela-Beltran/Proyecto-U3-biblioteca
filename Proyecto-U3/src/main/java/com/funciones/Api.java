@@ -73,5 +73,23 @@ public class Api {
             return null;
         }
     }
+    
+    
+    public String eliminar(String ruta) {
+        HttpRequest request = HttpRequest.newBuilder()
+            .uri(URI.create(this.url_api + ruta))
+            .header("Content-Type", "application/json")
+            .DELETE()
+            .build();
+        
+        try {
+            HttpResponse<String> response = this.client.send(request, BodyHandlers.ofString());
+            biblio_funciones.mensaje(response.body(),"eliminado" , 1);
+            return response.body();
+        } catch (IOException | InterruptedException e) {
+            e.printStackTrace();
+        }       
+        return null;
+    }
 
 }

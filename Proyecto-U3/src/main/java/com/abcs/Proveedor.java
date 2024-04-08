@@ -1,7 +1,4 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/GUIForms/JInternalFrame.java to edit this template
- */
+
 package com.abcs;
 
 import com.funciones.Api;
@@ -15,16 +12,7 @@ import java.util.List;
 import javax.swing.JLabel;
 
 
-
-/**
- *
- * @author Elias
- */
 public class Proveedor extends javax.swing.JInternalFrame {
-
-    /**
-     * Creates new form Clientes
-     */
     public Proveedor() {
         initComponents();
         
