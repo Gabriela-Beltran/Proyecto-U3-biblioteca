@@ -20,15 +20,6 @@ import javax.swing.WindowConstants;
 import javax.swing.filechooser.FileNameExtensionFilter;
 import javax.swing.text.View;
 
-
-
-
-
-
-/**
- *
- * @author Elias
- */
 public class biblio_funciones {
     
 

@@ -12,10 +12,7 @@ import java.net.http.HttpResponse;
 import java.net.http.HttpResponse.BodyHandlers;
 import java.net.http.HttpRequest.BodyPublishers;
 
-/**
- *
- * @author osman
- */
+
 public class Api {
     
     private  String url_api = "http://localhost:5000/";
