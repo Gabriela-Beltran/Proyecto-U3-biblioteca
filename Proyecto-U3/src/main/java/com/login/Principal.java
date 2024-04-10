@@ -38,7 +38,7 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jDesktopPane1 = new javax.swing.JDesktopPane(){
-            ImageIcon icon = new ImageIcon(getClass().getResource("images/fondo.jpg"));
+            ImageIcon icon = new ImageIcon(getClass().getResource("/images/fondo.jpg"));
             Image image = icon.getImage();
             public void paintComponent(Graphics g){
                 g.drawImage(image,0,0,getWidth(),getHeight(),this);
