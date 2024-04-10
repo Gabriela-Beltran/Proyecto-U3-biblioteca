@@ -38,7 +38,7 @@ public class Principal extends javax.swing.JFrame {
     private void initComponents() {
 
         jDesktopPane1 = new javax.swing.JDesktopPane(){
-            ImageIcon icon = new ImageIcon(getClass().getResource("/images/fondo.jpg"));
+            ImageIcon icon = new ImageIcon(getClass().getResource("../imgs/fondo.jpg"));
             Image image = icon.getImage();
             public void paintComponent(Graphics g){
                 g.drawImage(image,0,0,getWidth(),getHeight(),this);
@@ -70,6 +70,7 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel10.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/logo_con_fondo-removebg-preview.png"))); // NOI18N
         jLabel10.setToolTipText("");
         jLabel10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         jLabel10.addKeyListener(new java.awt.event.KeyAdapter() {
@@ -99,6 +100,7 @@ public class Principal extends javax.swing.JFrame {
         jMenuBar1.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
         jMenuBar1.setSelectionModel(null);
 
+        Abcs.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/altas-icon.png"))); // NOI18N
         Abcs.setText("Archivos");
         Abcs.setToolTipText("");
         Abcs.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -146,6 +148,7 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(Abcs);
 
+        Capturas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/capturas-icon.png"))); // NOI18N
         Capturas.setText("  Capturas");
         Capturas.setToolTipText("");
         Capturas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -178,6 +181,7 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(Capturas);
 
+        Consultas.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/reportes-icon.png"))); // NOI18N
         Consultas.setText("Reportes");
         Consultas.setToolTipText("");
         Consultas.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
@@ -189,6 +193,7 @@ public class Principal extends javax.swing.JFrame {
         });
 
         jMenuItem1.setFont(new java.awt.Font("Roboto", 0, 18)); // NOI18N
+        jMenuItem1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/editar.png"))); // NOI18N
         jMenuItem1.setText("Consultas");
         jMenuItem1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -199,6 +204,7 @@ public class Principal extends javax.swing.JFrame {
 
         jMenuBar1.add(Consultas);
 
+        Salir.setIcon(new javax.swing.ImageIcon(getClass().getResource("/images/salida.png"))); // NOI18N
         Salir.setText("<-SALIR");
         Salir.setCursor(new java.awt.Cursor(java.awt.Cursor.DEFAULT_CURSOR));
         Salir.setFont(new java.awt.Font("Roboto", 1, 18)); // NOI18N
